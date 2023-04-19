@@ -1,0 +1,12 @@
+﻿@page
+@model WebApplication2.Pages.HobbiesModel
+@{
+    ViewData["Title"] = "My Hobbies";
+}
+<h1>My Hobbies</h1>
+<ul>
+    @foreach (var hobby in Model.Hobbies)
+    {
+        <li>@hobby.Name - @hobby.Description</li>
+    }
+</ul>
